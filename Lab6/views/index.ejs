@@ -1,0 +1,21 @@
+<!doctype>
+<html>
+
+<head>
+    <title>News Letter</title>
+    <meta charset='utf8'>
+</head>
+
+<body>
+    <h1> Subscribe to our newsletter
+        <h/>
+        <form action="/newsletter" method="post" id="news">
+            <p> Enter your Email:<br> <input type="text" name="email"> </p>
+            <input type='hidden' name="_csrf" value='<%=csrfTokens%>'>
+            <p> <input type='Submit'></p>
+        </form>
+        <div style="color:red;">
+            <%= errmessage %>
+        </div>
+</body>
+</html>
